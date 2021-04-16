@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atheneum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./libStyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Atheneum</h1>
+            </div>
+            <div class="booksContainer">
+                <div class="bksSubContainer">
+                    <!-- Add the cards here -->
+                    <div class="cardContainer grcItem">
+                        <h4>Title: </h5>
+                        <h4>Author: </h5>
+                        <h4>Pages: </h4>
+                        <div  style="padding-top: 20px;display: flex; justify-content: center;">
+                            <input type="checkbox" name="" class="readCheckBx">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSidebar">
+                <div id="rsInfo">
+                    <div style="text-align: center;">
+                        <h3>LOG</h3>
+                    </div>
+                    <br>
+                    <div style="line-height: 1; padding-left: 15px;">
+                        <h5 id="label_Totalbooks">Total Books: </h5>
+                        <br>
+                        <h5 id="label_BooksRead">Books Read: </h5>
+                        <br>
+                        <h5 id="label_BooksUnread">Books Unread: </h5>
+                    </div> 
+                </div>
+                <div style="display: flex; justify-content: center; padding-top: 20px;">
+                    <button type="button" id="BTNaddbook">Add Book</button>
+                </div>
+            </div>
+            <div class="footer" style="text-align: center;">
+                <h4 style="padding-top: 5px;">Made By: Jin Tepes</h4>
+            </div>
+        </div>
+    </body>
+    <script src="./libScript.js"></script>
+</html>

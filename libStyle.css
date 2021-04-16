@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 50px auto 30px;
+}  
+
+.header{
+    grid-column: 1/3;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.booksContainer{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: blue;
+    padding: 15px 15px;
+}
+
+.bksSubContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 200px);
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.grcItem{
+    background-color: teal;
+    width: 250px;
+    height: 150px;
+    padding: 10px 10px;
+    line-height: 2;
+    border-radius: 10px;
+}
+
+.readCheckBx{
+    width: 75px;
+    height: 30px;
+    appearance: none;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.readCheckBx:checked{
+    background-color: green;
+}
+
+.rightSidebar{
+    grid-column: 2;
+    grid-row: 2/3;
+    background-color: brown;    
+    display: flex;
+    flex-direction: column;
+}
+
+#rsInfo{
+    padding-top: 10px;
+}
+
+.footer{
+    grid-row: 3;
+    grid-column: 1/3;
+    background-color: cadetblue;
+}
+
+#BTNc{
+    align-items: center;
+    align-content: center;
+}
+
+#BTNaddbook{
+    color: #000;
+    background-color: #f5f5f5;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font-size: 25px;
+    transition-duration: 0.5s;
+}
+
+#BTNaddbook:hover{
+    background-color: #979292;
+}
