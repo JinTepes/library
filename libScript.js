@@ -32,6 +32,7 @@ document.querySelector('#inputSubmitBTN').addEventListener(
     }
 );
 //
+
 //constructor
 function mkBook(title, author, pages, status){
     this.title = title;
@@ -39,7 +40,7 @@ function mkBook(title, author, pages, status){
     this.pages = pages;
     this.status = status;
 }
-
+//----------------------------------------------------//
 //Card Making
 function addCard(title, author, pages, read){
     let crdContainer = document.createElement('div');
@@ -160,21 +161,4 @@ function deleteCard(cardID){
     Athens.splice(index,1);
     arytoCards();
 }
-
-
-//testing
-/*
-let bookNFO = new mkBook("The Alchemist", "Paulo Coelho", "197");
-Athens.push(bookNFO)
-*/
-
-/*
-let cCard = document.createElement('div');
-cCard.className = 'cardContainer grcItem'
-bksCon.appendChild(cCard);
-let cNFO = document.createElement('h4');
-cNFO.innerHTML = "Title: <br>Author: <br>Pages: ";
-cCard.appendChild(cNFO)
-*/
-
 //-------------------------------------//
