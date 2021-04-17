@@ -48,10 +48,9 @@ function addCard(title, author, pages, read){
     bksCon.appendChild(crdContainer);
     //adding delete button on card
     let xdiv = document.createElement('div');
-    xdiv.className = "cardCloseBTN";
-    xdiv.style = "display: flex; justify-content: right;";
+    xdiv.className = "cardCloseBTN dFlex jRight";
     let xBtn = document.createElement('h4');
-    xBtn.style = "rotate: 45deg;"
+    xBtn.style = "transform: rotate(45deg);"
     xBtn.innerHTML="+";
     xBtn.className="delCardBTN";
     xBtn.id=title.toString();

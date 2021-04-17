@@ -4,6 +4,14 @@
     list-style: none;
 }
 
+.dFlex{
+    display: flex;
+}
+
+.jRight{
+    justify-content: right;
+}
+
 .container{
     height: 100vh;
     display: grid;
