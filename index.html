@@ -5,7 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./libStyle.css">
     </head>
+    
     <body>
+        <!-- modal section -->
+        <div class="modalContainer" style="display: none;">
+            <div class="popupFormContainer" style="width: 260px; height: 250px;">
+                <div class="popupFormContent">
+                    <div style="display: flex; justify-content: right; padding-right: 10px; padding-bottom: 10px;">
+                        <h3 id="closeBTN" style="rotate: 45deg;">+</h3>
+                    </div>
+                    <div class="inputFields" style="display: flex; flex-direction: column;">
+                        <div style="padding-bottom: 15px;">
+                            <input type="text" id="inputTitle" value="" placeholder="Book Title">
+                        </div>
+                        <div style="padding-bottom: 15px;">
+                            <input type="text" id="inputAuthor" value="" placeholder="Author">
+                        </div>
+                        <div style="padding-bottom: 15px;">
+                            <input type="text" id="inputPages" value="" placeholder="Pages">
+                        </div>
+                        <div style="padding-bottom: 15px; display: flex; flex-direction: row; justify-content: center;">
+                            <h5 style="width: auto; margin-right: 10px;">Mark as Read? </h5><input type="checkbox" id="readStats" style="width: auto;">
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <input type="button" value="Submit" id="inputSubmitBTN">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header">
                 <h1>Atheneum</h1>
@@ -13,14 +41,6 @@
             <div class="booksContainer">
                 <div class="bksSubContainer">
                     <!-- Add the cards here -->
-                    <div class="cardContainer grcItem">
-                        <h4>Title: </h5>
-                        <h4>Author: </h5>
-                        <h4>Pages: </h4>
-                        <div  style="padding-top: 20px;display: flex; justify-content: center;">
-                            <input type="checkbox" name="" class="readCheckBx">
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="rightSidebar">
